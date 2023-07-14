@@ -136,7 +136,7 @@ public class DBalumno extends javax.swing.JFrame {
             String codigo = txtCodigo.getText();
             String nombre = txtNombre.getText();
             
-            
+            //guardamos en sql para usar luego
             String sql = "insert into tbalumno VALUE (\""+codigo+"\", \""+nombre+"\");";
             Statement stm = cn.createStatement();
             stm.executeUpdate(sql);
